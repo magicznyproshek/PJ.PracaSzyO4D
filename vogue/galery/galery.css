@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+    }
+ /* każda strona ma kolorową kategorię żeby user wiedział gdzie się znajduje */
+    #galery{
+        color: rgb(190, 113, 72);
+
+    }
+
+    .container{
+        height: 100%;
+        border: 4px solid black;
+        width: 100%;
+        min-height: 90vh;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+ 
+    .logo{
+        color: black;
+        width: 30%;
+        text-decoration: none;
+        margin: 30px 0;
+    }
+    .logo:hover{
+        color: rgb(240, 111, 88);
+    }
+ 
+ /* pasek nawigacyjny */
+    
+    .navbar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    nav{
+        flex: 1;
+        text-align: right;
+    }
+ 
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 2%;
+    }
+ 
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+    }
+ 
+    nav ul li a:hover{
+        color: rgb(240, 111, 88);
+    }
+ 
+    
+/* footer i tekst znajdujący się w nim */
+    #footer{
+        height: 10vh;
+        background-color: rgb(117, 62, 52);
+    }
+
+    #info{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+    
+
+   /* ta1 odpowiada za wygląd tekstu */
+    #ta1{
+        font-size: 20px;
+        color: rgb(116, 116, 115);
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        text-align:center ;
+    }
+
+/* ist to podziały na zdjecia po lewej i prawej stronie */
+
+    #ist1{
+        margin-top: 6%;
+        width: 50%;
+        border: 1px groove grey;
+        float: right;
+        margin-right: -10%;
+    }
+
+    #ist{
+        margin-top: 6%;
+    width: 50%;
+    border: 1px groove grey;
+    float: left;
+    margin-left: -10%;
+    }
+
+    /* część zrobiona pod animację pokazującą informacje o autorze i dziele */
+
+    .text {
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+
+      .contener:hover .middle {
+        opacity: 1;
+      }
+
+      .contener:hover .a1 {
+        opacity: 0.3;
+      }
+      
+      .contener {
+        position: relative;
+        width: 50%;
+      }
+      
+      .a1 {
+        opacity: 1;
+        display: block;
+        width: 200%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      
+      .middle {
+        width: 100%;
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
